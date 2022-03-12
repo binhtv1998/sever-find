@@ -81,7 +81,7 @@ async function getHTML(productURL) {
         } else {
             var image_list = [];
             let rs;
-            $('div[class="ma2"]').find('div > div > button > img').each(function (index, element) {
+            $('div[class="ma2"]').find('div > div > button > div > img').each(function (index, element) {
                 image_list.push($(element).attr('src').split("?")[0]);
               });
             // $('.ma2').find('tc').each(function () {
